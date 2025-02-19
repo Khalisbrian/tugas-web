@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>utama</title>
+    <link rel="stylesheet" href="style1.css" />
+    <!-- rumus "ps"="personal note" -->
+  </head>
+  <body>
+    <header>
+      <!-- kata-kata tranparan -->
+      <h1>Shopifly</h1>
+      <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto flex items-center justify-between p-4">
+          <!-- Logo -->
+          <div class="cover-logo">
+            <img
+              src="asset/balloon-heart.svg"
+              alt=""
+              width="45"
+              height="40"
+              class="logo"
+            />
+          </div>
+
+          <!-- Menu Navigasi -->
+          <ul class="hidden md:flex space-x-8 text-gray-600">
+            <li><a href="index.html" class="hover:text-blue-600">Beranda</a></li>
+            <li><a href="#produk" class="hover:text-blue-600">Produk</a></li>
+            <li><a href="#tentang" class="hover:text-blue-600">Tentang</a></li>
+            <li><a href="#kontak" class="hover:text-blue-600">Kontak</a></li>
+          </ul>
+
+          <!-- search bar -->
+          <input
+            class="search"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+
+          <!-- Ikon Keranjang dan Akun -->
+          <div class="flex space-x-4 items-center">
+            <a href="keranjang.html"><img src="asset/cart4.svg" alt="" /></a>
+            <a href="#"><img src="asset/person.svg" alt="" /></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- produk -->
+    <!-- ps.poto produk nya masukin dalam asset yaa :) -->
+    <section class="produk" id="produk">
+      <div class="container1">
+        <div class="card">
+          <button class="favorite">&#9829;</button>
+          <img src="asset/displaySendal.jpg" alt="Product 1" />
+          <h2>Product 1</h2>
+          <p>$20.00</p>
+          <button class="button">Add to Cart</button>
+        </div>
+        <div class="card">
+          <button class="favorite">&#9829;</button>
+          <img src="asset/sendal-pria.png" alt="Product 2" />
+          <h2>Product 2</h2>
+          <p>$35.00</p>
+          <button class="button">Add to Cart</button>
+        </div>
+        <div class="card">
+          <button class="favorite">&#9829;</button>
+          <img src="asset/sandal-2.jpg" alt="Product 3" />
+          <h2>Product 3</h2>
+          <p>$50.00</p>
+          <button class="button">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- slider produk 
+     ps.baru foto bisa di ganti -->
+    <section class="slider-container">
+      <h2 class="section-title">Produk Terbaru</h2>
+      <div class="slider-container">
+        <div class="slider-container" onmouseover="pauseSlide()" onmouseout="resumeSlide()">
+          <!-- bisa tambah slidenya 
+           ps.kalo mundur slide nya mundur terus
+              kalo bisa perbaiki makasih -->
+          <div class="slider">
+              <div class="slide"><img src="asset/displaySendal.jpg" alt="Sandal Wanita"><h2>Sandal Wanita</h2><p class="price">$20.00</p><button class="button">Tambah ke Keranjang</button></div>
+              <div class="slide"><img src="asset/sendal-pria.png" alt="Sandal Pria"><h2>Sandal Pria</h2><p class="price">$35.00</p><button class="button">Tambah ke Keranjang</button></div>
+              <div class="slide"><img src="asset/sandal-2.jpg" alt="Sandal Sport"><h2>Sandal Sport</h2><p class="price">$50.00</p><button class="button">Tambah ke Keranjang</button></div>
+              <div class="slide"><img src="asset/sandal-kulit.jpg" alt="Sandal Kulit"><h2>Sandal Kulit</h2><p class="price">$60.00</p><button class="button">Tambah ke Keranjang</button></div>
+              <div class="slide"><img src="asset/sandal-anak.jpg" alt="Sandal Anak"><h2>Sandal Anak</h2><p class="price">$25.00</p><button class="button">Tambah ke Keranjang</button></div>
+          </div>
+          <!-- Indikator titik -->
+          <div class="dots-container"></div>
+      </div>
+      
+        <!-- Tombol Navigasi -->
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+/*ps.ini untuk kata shopifly nya jan otak-atik*/
+h1 {
+  font-size: 100px;
+  display:flex;
+  justify-content:center;
+  align-items: center;             
+  text-align: center;
+  background-image: url(asset/displaySendal.jpg);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Navbar Styles */
+nav {
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 1rem;
+}/*ps.ini bagian navbar nya juga*/
+ul {
+  display: flex;
+  gap: 2rem;
+}
+ul li {
+  color: #4b5563;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+ul li:hover {
+  color: #2563eb;
+}/*ikon keranjang ama akun*/
+.flex {
+  margin-right: 20px;
+  padding: 20px;
+  display: flex;
+  align-items:center;
+  gap: 1rem;
+}/*search bar*/
+.search{
+  width: 170%;
+  position: relative;
+  padding: 0.5rem;
+  outline-color: #f6ea6e;
+}
+.search:hover {
+  cursor:help;
+}
+
+/*top produk*/
+.container1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.card {
+  flex-wrap: wrap;
+  background: white;
+  padding: 10%;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+.card:has(figcaption){
+  padding: 10%;
+  border-radius: 50px;
+}
+.card img {
+  border-top-left-radius: 70px;
+  border-top-right-radius: 50px;
+  object-fit: cover;
+  width: 90%;
+  height: 50%;
+}/*ps.tujuannya buat like button tapi gini hasil nya*/
+.favorite {
+  position: absolute;
+  background:#ffffff;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+.favorite:active{
+  color: red;
+}
+.button {
+  margin-top: 10px;
+  padding: 10px;
+  width: 50%;
+  background: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.section-title{
+  position:center;
+  font-style: italic;
+  background: #ed0909;
+}
+
+/* Slider Container */
+.slider-container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}/* Slider */
+.slider {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}/* Setiap Slide */
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+.slide img {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px ;
+  object-fit: cover;
+  width: 90%;
+  height: 50%;
+  max-width: 300px;
+}
+
+/* Tombol Navigasi */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Indikator titik */
+.dots-container {
+  text-align: center;
+  margin-top: 10px;
+}
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.dot.active {
+  background-color: #333;
+}

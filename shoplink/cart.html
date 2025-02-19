@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Belanja</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <h1>Shopifly - Keranjang</h1>
+        <nav>
+            <a href="beranda.html">Beranda</a>
+            <a href="cart.html">Keranjang</a>
+        </nav>
+    </header>
+
+    <section class="cart-container">
+        <h2>Keranjang Belanja</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Produk</th>
+                    <th>Harga</th>
+                    <th>Jumlah</th>
+                    <th>Total</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Produk akan ditampilkan di sini -->
+            </tbody>
+        </table>
+        <h3>Total Keseluruhan: $<span id="total-price">0.00</span></h3>
+        <button id="checkout">Checkout</button>
+    </section>
+
+    <script src="cart.js"></script>
+</body>
+</html>
